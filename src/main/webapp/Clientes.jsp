@@ -57,7 +57,7 @@
 			</div>
 		</div>
 		<div class="col-md-8">
-			<table class="table">
+			<table class="table table-dark table-hover text-center">
 				<thead class="thead-dark">
 					<tr>
 						<th scope="col">Cédula</th>
@@ -65,6 +65,7 @@
 						<th scope="col">Email</th>
 						<th scope="col">Dirección</th>
 						<th scope="col">Teléfono</th>
+						<th scope="col">Opciones</th>
 					</tr>
 				</thead>
 				<tbody>
