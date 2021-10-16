@@ -27,12 +27,12 @@
 
 						<div class="form-group">
 							<input type="hidden" name="menu" value="Clientes"> <label>Cédula:</label>
-							<input type="text" name="txtcedula" class="form-control" required="required" placeholder="Número de cédula"
+							<input type="text" name="txtcedula" class="form-control" required="required" placeholder="Cédula cliente"
 								value="${clienteSeleccionado.getCedula_cliente()}">
 						</div>
 						<div class="form-group">
 							<label>Nombre:</label> <input type="text" name="txtnombre"
-								class="form-control" required="required" placeholder="Nombre completo"
+								class="form-control" required="required" placeholder="Nombre cliente"
 								value="${clienteSeleccionado.getNombre_cliente()}">
 						</div>
 						<div class="form-group">
@@ -42,12 +42,12 @@
 						</div>
 						<div class="form-group">
 							<label>Dirección:</label> <input type="text" name="txtdireccion"
-								class="form-control" required="required" placeholder="Dirección de residencia"
+								class="form-control" required="required" placeholder="Dirección cliente"
 								value="${clienteSeleccionado.getDireccion_cliente()}">
 						</div>
 						<div class="form-group">
 							<label>Teléfono:</label> <input type="text" name="txttelefono"
-								class="form-control" required="required" placeholder="Número de teléfono"
+								class="form-control" required="required" placeholder="Teléfono cliente"
 								value="${clienteSeleccionado.getTelefono_cliente()}">
 						</div>
 						<div class="p-3" align="center">
