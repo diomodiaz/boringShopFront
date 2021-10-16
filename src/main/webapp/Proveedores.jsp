@@ -27,27 +27,27 @@
 
 						<div class="form-group">
 							<input type="hidden" name="menu" value="Proveedores"> <label>Nit:</label>
-							<input type="text" name="txtnit" class="form-control"
+							<input type="text" name="txtnit" class="form-control" required="required" placeholder="Nit proveedor"
 								value="${proveedorSeleccionado.getNitproveedor()}">
 						</div>
 						<div class="form-group">
 							<label>Nombre:</label> <input type="text" name="txtnombre"
-								class="form-control"
+								class="form-control" required="required" placeholder="Nombre proveedor"
 								value="${proveedorSeleccionado.getNombre_proveedor()}">
 						</div>
 						<div class="form-group">
 							<label>Ciudad:</label> <input type="text" name="txtciudad"
-								class="form-control"
+								class="form-control" required="required" placeholder="Ciudad proveedor"
 								value="${proveedorSeleccionado.getCiudad_proveedor()}">
 						</div>
 						<div class="form-group">
 							<label>Dirección:</label> <input type="text" name="txtdireccion"
-								class="form-control"
+								class="form-control" required="required" placeholder="Dirección proveedor"
 								value="${proveedorSeleccionado.getDireccion_proveedor()}">
 						</div>
 						<div class="form-group">
 							<label>Teléfono:</label> <input type="text" name="txttelefono"
-								class="form-control"
+								class="form-control" required="required" placeholder="Teléfono proveedor"
 								value="${proveedorSeleccionado.getTelefono_proveedor()}">
 						</div>
 						<div class="p-3" align="center">
