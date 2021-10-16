@@ -6,6 +6,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="css/formularios.css"media="screen" />
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -14,9 +15,9 @@
 <meta charset="ISO-8859-1">
 <title>Creación de Proveedores</title>
 </head>
-<body>
+<body style="background-color: transparent;">
 	<div class="row">
-		<div class="card col-md-4">
+		<div class="card col-md-4 card text-white bg-dark mb-3">
 			<div class="card-body">
 				<h5 class="card-title">Proveedores</h5>
 				<h6 class="card-subtitle mb-2 text-muted">En este panel podras
@@ -49,15 +50,17 @@
 								class="form-control"
 								value="${proveedorSeleccionado.getTelefono_proveedor()}">
 						</div>
-						<input type="submit" class="btn btn-primary" name="accion"
+						<div class="p-3" align="center">
+							<input type="submit" class="btn btn-outline-dark text-white" name="accion"
 							value="Agregar"> <input type="submit"
-							class="btn btn-success" name="accion" value="Actualizar">
+							class="btn btn-outline-dark text-white" name="accion" value="Actualizar">
+						</div>
 					</form>
 				</div>
 			</div>
 		</div>
 		<div class="col-md-8">
-			<table class="table">
+			<table class="table table-dark table-hover text-center">
 				<thead class="thead-dark">
 					<tr>
 						<th scope="col">Nit</th>
@@ -65,6 +68,7 @@
 						<th scope="col">Ciudad</th>
 						<th scope="col">Dirección</th>
 						<th scope="col">Teléfono</th>
+						<th scope="col">Opciones</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -78,9 +82,9 @@
 						<td><%=proveedor.getCiudad_proveedor()%></td>
 						<td><%=proveedor.getDireccion_proveedor()%></td>
 						<td><%=proveedor.getTelefono_proveedor()%></td>
-						<td><a class="btn btn-warning"
+						<td><a class="btn btn-outline-warning text-white"
 							href="Controller?menu=Usuarios&accion=Cargar&id=<%=proveedor.getNitproveedor()%>">Editar</a>
-							<a class="btn btn-danger"
+							<a class="btn btn-outline-danger text-white"
 							href="Controller?menu=Usuarios&accion=Eliminar&id=<%=proveedor.getNitproveedor()%>">Eliminar</a>
 						</td>
 					</tr>
@@ -89,6 +93,7 @@
 					%>
 				</tbody>
 			</table>
+		</div>
 		</div>
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
