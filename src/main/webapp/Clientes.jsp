@@ -26,28 +26,28 @@
 					<form class="form-sign" method="get" action="Controller">
 
 						<div class="form-group">
-							<input type="hidden" name="menu" value="Clientes"> <label>Cedula:</label>
-							<input type="text" name="txtcedula" class="form-control"
+							<input type="hidden" name="menu" value="Clientes"> <label>Cédula:</label>
+							<input type="text" name="txtcedula" class="form-control" required="required" placeholder="Número de cédula"
 								value="${clienteSeleccionado.getCedula_cliente()}">
 						</div>
 						<div class="form-group">
 							<label>Nombre:</label> <input type="text" name="txtnombre"
-								class="form-control"
+								class="form-control" required="required" placeholder="Nombre completo"
 								value="${clienteSeleccionado.getNombre_cliente()}">
 						</div>
 						<div class="form-group">
-							<label>Email:</label> <input type="text" name="txtemail"
-								class="form-control"
+							<label>Email:</label> <input type="email" name="txtemail"
+								class="form-control" required="required" placeholder="ejemplo@ej.com"
 								value="${clienteSeleccionado.getEmail_cliente()}">
 						</div>
 						<div class="form-group">
 							<label>Dirección:</label> <input type="text" name="txtdireccion"
-								class="form-control"
+								class="form-control" required="required" placeholder="Dirección de residencia"
 								value="${clienteSeleccionado.getDireccion_cliente()}">
 						</div>
 						<div class="form-group">
 							<label>Teléfono:</label> <input type="text" name="txttelefono"
-								class="form-control"
+								class="form-control" required="required" placeholder="Número de teléfono"
 								value="${clienteSeleccionado.getTelefono_cliente()}">
 						</div>
 						<div class="p-3" align="center">
@@ -82,9 +82,9 @@
 						<td><%=cliente.getEmail_cliente()%></td>
 						<td><%=cliente.getDireccion_cliente()%></td>
 						<td><%=cliente.getTelefono_cliente()%></td>
-						<td><a class="btn btn-warning"
+						<td><a class="btn btn-outline-warning text-white"
 							href="Controller?menu=Usuarios&accion=Cargar&id=<%=cliente.getCedula_cliente()%>">Editar</a>
-							<a class="btn btn-danger"
+							<a class="btn btn-outline-danger text-white"
 							href="Controller?menu=Usuarios&accion=Eliminar&id=<%=cliente.getCedula_cliente()%>">Eliminar</a>
 						</td>
 					</tr>
