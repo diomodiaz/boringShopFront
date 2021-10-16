@@ -27,7 +27,7 @@
 					<form class="form-sign" method="get" action="Controlador">
 						<div class="form-group">
 							<input type="hidden" name="menu" value="Usuarios"> <label>Cedula:</label>
-							<input type="text" name="txtcedula" class="form-control" required="required" placeholder="Nùmero de cèdula"
+							<input type="text" name="txtcedula" class="form-control" required="required" placeholder="Número de cédula"
 								value="${usuarioSeleccionado.getCedula_usuario()}">
 						</div>
 						<div class="form-group">
