@@ -16,7 +16,7 @@
 </head>
 <body>
 	<div class="row">
-		<div class="card col-md-4">
+		<div class="card col-md-4 card text-white bg-dark mb-3">
 			<div class="card-body">
 				<h5 class="card-title">Clientes</h5>
 				<h6 class="card-subtitle mb-2 text-muted">En este panel podras
@@ -90,6 +90,7 @@
 					%>
 				</tbody>
 			</table>
+		</div>
 		</div>
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
