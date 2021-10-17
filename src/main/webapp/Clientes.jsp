@@ -6,6 +6,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link  rel="icon"   href="images/Favicon.png" type="image/png" />
 <link rel="stylesheet" type="text/css" href="css/formularios.css"media="screen" />
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"

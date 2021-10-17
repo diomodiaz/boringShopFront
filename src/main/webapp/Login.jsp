@@ -6,6 +6,7 @@
 <meta charset="ISO-8859-1">
 <title>BoringShop | Login</title>
 <!-- Bootstrap CSS -->
+<link  rel="icon"   href="images/Favicon.png" type="image/png" />
 <link rel="stylesheet" type="text/css" href="css/login.css"
 	media="screen" />
 <link rel="stylesheet"
