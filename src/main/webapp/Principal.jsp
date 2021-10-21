@@ -53,7 +53,7 @@
 				id="dropdownMenuButton1" data-bs-toggle="dropdown"
 				aria-expanded="false">${usuario.getNombre_usuario()}</button>
 			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-				<a class="dropdown-item" href="#"><img src="imagen/login.jpg"
+				<a class="dropdown-item" href="#"><img src="images/Logo.png"
 					width="40" alt="40"></a> <a class="dropdown-item" href="#">${usuario.getUsuario()}</a>
 				<a class="dropdown-item" href="#">${usuario.getEmail_usuario()}</a>
 				<div class="dropdown-divider"></div>
