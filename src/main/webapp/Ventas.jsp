@@ -13,7 +13,74 @@
 	crossorigin="anonymous">
 </head>
 <body style="background-color: transparent;">
-	<p class="fs-1 text-white text-center">Proximamente ventas!!!!</p>
+	<div class="container">
+        <div class="container-form">
+            <form action="" method="" class="form">
+                <label for="cedula">Cédula</label>
+                <input type="text" name="cedula" id="cedula" autofocus>
+                <button>Consultar</button>
+                
+            </form>
+            <div class="results">
+                <label for="cliente">Cliente</label>
+                <input type="text" name="cliente" id="cliente">
+                <label for="consecutivo">Consec.</label>
+                <input type="text" name="consecutivo" id="consecutivo">
+            </div>     
+        </div>
+        
+        <div class="container-producto">
+            <div class="datos-producto">
+                <label for="">Cod. Producto</label>
+                <form action="" class="form-result">
+                    <input type="text">
+                    <button class="btn-1">Consultar</button>
+                    <input type="text">
+                    <button class="btn-2">Consultar</button>
+                    <input type="text">
+                    <button class="btn-3">Consultar</button>
+                </form>
+            </div>
+            <div class="name-producto">
+                <label for="">Nombre Producto</label>
+                <input type="text">
+                <input type="text">
+                <input type="text">
+            </div>
+            <div class="cantidad">
+                <label for="">Cant.</label>
+                <input type="text">
+                <input type="text">
+                <input type="text">
+            </div>
+            <div class="valor">
+                <label for="">Vlr. Total</label>
+                <input type="text">
+                <input type="text">
+                <input type="text">
+            </div>
+        </div>
+
+        <div class="calcular">
+            <div class="btn-calcular">
+                <button>Confirmar</button>
+            </div>
+            <div class="calculos">
+                <div class="orden">
+                    <label for="">Total ventas</label>
+                    <input type="text">
+                </div>
+                <div class="orden">
+                    <label for="">Total IVA</label>
+                    <input type="text">
+                </div>
+                <div class="orden">
+                    <label for="">Total con IVA</label>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
