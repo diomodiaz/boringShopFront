@@ -27,7 +27,7 @@
 						<div class="form-group d-flex p-1">
 							<div class="col-sm-6 d-flex">
 								<input type="number" name="cedulacliente" class="form-control"
-									placeholder="cedula cliente" value="${clienteSeleccionado.getCedula_cliente()}"> 
+									placeholder="Cédula cliente" value="${clienteSeleccionado.getCedula_cliente()}"> 
 								<input type="submit" name="accion" value="BuscarCliente"
 									class="btn btn-outline-dark text-white">
 							</div>
@@ -46,7 +46,7 @@
 						<div class="form-group d-flex p-1">
 							<div class="col-sm-6 d-flex">
 								<input type="number" name="codigoproducto" class="form-control"
-									placeholder="codigo producto" value="${productoSeleccionado.getCodigo_producto()}"> 
+									placeholder="Código producto" value="${productoSeleccionado.getCodigo_producto()}"> 
 								<input type="submit" name="accion" value="BuscarProducto"
 									class="btn btn-outline-dark text-white">
 							</div>
@@ -67,7 +67,7 @@
 							</div>
 							<div class="col-sm-3">
 								<input type="text" name="ivaproducto" class="form-control"
-									placeholder="Valor Iva" value="${productoSeleccionado.getIvacompra()}">
+									placeholder="Valor IVA" value="${productoSeleccionado.getIvacompra()}">
 							</div>
 						</div>
 						<div class="p-2" align="center">
@@ -85,7 +85,7 @@
 					<label class="">Número Factura</label>
 					</div>
 					<div class="form-group p-1">
-					<input class="form-control" type="text" name="numerofactura" value="${numerofactura}">			
+					<input class="form-control" placeholder="000" type="text" name="numerofactura" value="${numerofactura}">			
 					</div>				
 				</div>
 				<div class="card-body">
