@@ -5,6 +5,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Ventas BoringShop</title>
+<link rel="stylesheet" type="text/css" href="css/formularios.css"media="screen" />
 <link  rel="icon"   href="images/Favicon.png" type="image/png" />
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
@@ -16,8 +17,8 @@
 	<div class="row">
 		<div class="col-md-5 seccion1">
 			<form method="get" action="Controller">
-				<div class="card">
-					<div class="card-body">
+				<div class="card card text-white bg-dark mb-1">
+					<div class="card-body ">
 						<div class="form-group">
 							<label> Datos Clientes</label>
 						</div>
@@ -37,7 +38,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="card">
+				<div class="card text-white bg-dark mb-1">
 					<div class="card-body">
 						<div class="form-group">
 							<label> Datos Productos </label>
@@ -71,14 +72,14 @@
 						</div>
 						<div class="form-group d-flex">
 							<input type="submit" name="accion" value="AgregarProducto"
-								class="btn btn-outline-dark">
+								class="btn btn-outline-dark text-white">
 						</div>
 					</div>
 				</div>
 			</form>
 		</div>
 		<div class="col-md-7 seccion2">
-			<div class="card">
+			<div class="card text-white bg-dark mb-1">
 				<div class="card-header">
 					<div class="form-group row">
 					<label class="col-sm-3 col-form-label">Numero Factura</label>
@@ -86,7 +87,7 @@
 					</div>				
 				</div>
 				<div class="card-body">
-					<table class="table">
+					<table class="table table-dark table-hover text-center">
 						<thead class="thead-dark">
 							<tr>
 								<th>#</th>
