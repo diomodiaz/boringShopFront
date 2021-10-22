@@ -20,16 +20,16 @@
 				<div class="card card text-white bg-dark mb-1">
 					<div class="card-body ">
 						<div class="form-group">
-							<label> Datos Clientes</label>
+							<label class="p-1"> Datos Clientes</label>
 						</div>
 						<input type="hidden" name="menu" value="Ventas"> 
 						<input type="hidden" name="UsuarioActivo" value="${usuarioSeleccionado.getCedula_usuario()}" >
-						<div class="form-group d-flex">
+						<div class="form-group d-flex p-1">
 							<div class="col-sm-6 d-flex">
 								<input type="number" name="cedulacliente" class="form-control"
 									placeholder="cedula cliente" value="${clienteSeleccionado.getCedula_cliente()}"> 
 								<input type="submit" name="accion" value="BuscarCliente"
-									class="btn btn-outline-info">
+									class="btn btn-outline-dark text-white">
 							</div>
 							<div class="col-sm-6">
 								<input type="text" name="nombrecliente" class="form-control"
@@ -41,21 +41,21 @@
 				<div class="card text-white bg-dark mb-1">
 					<div class="card-body">
 						<div class="form-group">
-							<label> Datos Productos </label>
+							<label class="p-1"> Datos Productos </label>
 						</div>
-						<div class="form-group d-flex">
+						<div class="form-group d-flex p-1">
 							<div class="col-sm-6 d-flex">
 								<input type="number" name="codigoproducto" class="form-control"
 									placeholder="codigo producto" value="${productoSeleccionado.getCodigo_producto()}"> 
 								<input type="submit" name="accion" value="BuscarProducto"
-									class="btn btn-outline-info">
+									class="btn btn-outline-dark text-white">
 							</div>
 							<div class="col-sm-6">
 								<input type="text" name="nombreproducto" class="form-control"
 									placeholder="Nombre producto" value="${productoSeleccionado.getNombre_producto()}">
 							</div>
 						</div>
-						<div class="form-group d-flex">
+						<div class="form-group d-flex p-1">
 							<div class="col-sm-6 d-flex">
 								<input type="text" name="precioproducto" class="form-control"
 									placeholder="$  0000.00" value="${productoSeleccionado.getPrecio_venta()}">
@@ -70,7 +70,7 @@
 									placeholder="Valor Iva" value="${productoSeleccionado.getIvacompra()}">
 							</div>
 						</div>
-						<div class="form-group d-flex">
+						<div class="p-2" align="center">
 							<input type="submit" name="accion" value="AgregarProducto"
 								class="btn btn-outline-dark text-white">
 						</div>
@@ -81,9 +81,11 @@
 		<div class="col-md-7 seccion2">
 			<div class="card text-white bg-dark mb-1">
 				<div class="card-header">
-					<div class="form-group row">
-					<label class="col-sm-3 col-form-label">Numero Factura</label>
-					<input class="form-control col-md-4" type="text" name="numerofactura" value="${numerofactura}">			
+					<div class="form-group p-1">
+					<label class="">Número Factura</label>
+					</div>
+					<div class="form-group p-1">
+					<input class="form-control" type="text" name="numerofactura" value="${numerofactura}">			
 					</div>				
 				</div>
 				<div class="card-body">
@@ -120,18 +122,18 @@
 						<label>iva</label></br> </br>
 						<label>total a pagar</label></br> </br>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 p-1">
 						<input type="text" name="txtsubtotal" class="form-control" placeholder="$ 00.000.00" disabled="disabled" value="${totalsubtotal}">
 						<input type="text" name="txttotaliva" class="form-control" placeholder="$ 00.000.00" disabled="disabled" value="${totaliva}">
 						<input type="text" name="txttotalapagar" class="form-control" placeholder="$ 00.000.00" disabled="disabled" value="${totalapagar}">
 					</div>									
 				</div>							
 			</div>	
-			<div class="card-footer" d-flex>
+			<div class="card-footer" align="center">
 				<div class="col-md-8">
 				 <!-- enviamos los tres valores al controlador --> 
-					<a class="btn btn-success" onclick="print()" href="Controller?menu=Ventas&accion=GenerarVenta&cedulacliente=${clienteSeleccionado.getCedula_cliente()}&UsuarioActivo=${usuarioSeleccionado.getCedula_usuario()}&numerofactura=${numerofactura}">Generar Venta</a>
-					<a class="btn btn-danger" href="Controller?menu=Ventas&accion=NuevaVenta">Nueva Venta</a>
+					<a class="btn btn-outline-dark text-white" onclick="print()" href="Controller?menu=Ventas&accion=GenerarVenta&cedulacliente=${clienteSeleccionado.getCedula_cliente()}&UsuarioActivo=${usuarioSeleccionado.getCedula_usuario()}&numerofactura=${numerofactura}">Generar Venta</a>
+					<a class="btn btn-outline-dark text-white" href="Controller?menu=Ventas&accion=NuevaVenta">Nueva Venta</a>
 				</div>
 			</div>				
 		</div>		
